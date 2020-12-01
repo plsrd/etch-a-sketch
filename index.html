@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Page Title</title>
+</head>
+<body>
+  <nav>
+    <input type="color" id="pick" value="#ffc6ff"></input>
+    <button id="shade">Shade</button>
+    <button id="rgb">RGB</button>
+    <button id="black">Black</button>
+    <button id="erase">Erase</button>
+    <button id="clear">Clear</button>
+    <div class="slidecontainer">
+      <label for="gridSize">Adjust grid size</label>
+      <input type="range" min="2" max="60" value="16" class="slider" id="gridSize">
+    </div>
+  </nav>
+
+  <main id="container"></main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
