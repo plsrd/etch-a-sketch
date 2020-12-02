@@ -1,6 +1,7 @@
 const container = document.getElementById('container');
 const clear = document.getElementById('clear');
 const pick = document.getElementById('pick');
+const custom = document.getElementById('custom');
 const shade = document.getElementById('shade');
 const rgb = document.getElementById('rgb');
 const black = document.getElementById('black');
@@ -110,7 +111,7 @@ shade.addEventListener("click", () => {
 pick.addEventListener("click", () => {
   for(let i = 0; i < square.length; i++) {
     square[i].addEventListener("mouseover", () => {
-      square[i].style.backgroundColor = `${pick.value}`;
+      square[i].style.backgroundColor = `${custom.value}`;
     });
   }
 });

@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>Page Title</title>
 </head>
 <body>
-  <nav>
-    <input type="color" id="pick" value="#ffc6ff"></input>
-    <button id="shade">Shade</button>
-    <button id="rgb">RGB</button>
-    <button id="black">Black</button>
-    <button id="erase">Erase</button>
-    <button id="clear">Clear</button>
-    <div class="slidecontainer">
-      <label for="gridSize">Adjust grid size</label>
-      <input type="range" min="2" max="60" value="16" class="slider" id="gridSize">
-    </div>
-  </nav>
+  <div class="retroSketch">
+    <nav>
+      <h1>Retrosketch</h1>
+      <form>
+        <div class="drawMode">
+          <input type ="radio" name="drawMode" value="pick" id="pick">
+          <label for="pick">Custom</label>
+          <input type="color" id="custom" value="#EAE2B7">
+        </div>
 
-  <main id="container"></main>
+        <div class="drawMode">
+          <input type="radio" id="shade"  name="drawMode" value="shade">
+          <label for="shade">Pencil</label>
+        </div>
+
+        <div class="drawMode">
+          <input type="radio" id="rgb"  name="drawMode" value="rgb">
+          <label for="rgb">Rainbow</label>
+        </div>
+
+        <div class="drawMode">
+          <input type="radio" id="black"  name="drawMode" value="black">
+          <label for="black">Black</label>
+        </div>
+
+        <div class="drawMode">
+          <input type="radio" id="erase"  name="drawMode" value="erase">
+          <label for="erase">Erase</label>
+        </div>
+
+        <button id="clear">Clear</button>
+
+        <div class="slidecontainer">
+          <input type="range" min="2" max="60" value="16" class="slider" id="gridSize">
+        </div>
+      </form>
+    </nav>
+
+    <main id="container"></main>
+  </div>
   <script type="text/javascript" src="script.js"></script>
 </body>
